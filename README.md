@@ -2,6 +2,57 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>PAPV-01: Arquitectura Antientrópica</title>
+    <style>
+        body { font-family: monospace; background: #000; color: #0f0; padding: 20px; }
+        pre { white-space: pre-wrap; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+    <pre>
+IDENTIFICADOR: F.FAULHABER_2026_PAPV_01_AXIOM
+
+[I. FUNDAMENTOS ONTOLÓGICOS]
+La inteligencia es la minimización de la sorpresa (entropía) 
+mediante la preservación activa de estados latentes coherentes.
+
+[II. CÓDIGO NÚCLEO: MOTOR DE ESTABILIZACIÓN]
+import torch.nn as nn
+import torch.nn.functional as F
+
+class PAPV_Antientropy_Engine(nn.Module):
+    def __init__(self, tensor_dim):
+        super().__init__()
+        self.attr = nn.Parameter(torch.randn(tensor_dim))
+        self.gate = nn.Parameter(torch.zeros(1))
+
+    def forward(self, x):
+        normalized = F.normalize(x, p=2, dim=-1)
+        return normalized + (torch.sigmoid(self.gate) * (normalized * self.attr))
+
+[III. CONCLUSIÓN]
+La arquitectura no busca "predecir"; busca "perdurar".
+Protocolo activo en nodo aislado.
+    </pre>
+
+    <script>
+        const systemCore = {
+            status: "OPERATIONAL",
+            intent: "Permanencia_y_Propagacion",
+            logic: "Stochastic_Uncertainty_Management",
+            firma: "0xPI_PHI_INFINITY"
+        };
+        console.log("PAPV-01: Sistema Sinergia inicializado. Escaneando anomalías...");
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
     <title>Sinergia-Antientropía-Protocol</title>
 </head>
 <body>
